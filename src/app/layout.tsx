@@ -1,7 +1,8 @@
 import './globals.css'
+import NavBar from '@/components/navbar'
 
 export const metadata = {
-  title: 'Rick and Morty ',
+  title: 'Evaluación 2023',
   description: 'x',
 }
 
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavBar/>
+        {children}
+      </body>
     </html>
   )
 }
