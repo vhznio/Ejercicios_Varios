@@ -1,6 +1,6 @@
 "use client";
 
-import { fetchChars } from '@/components/fetchChars';
+import { fetchAllChars } from '@/components/fetchAllChars';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -9,7 +9,7 @@ const myLoader = ({ src, width, quality }:any) => {
 }
 
 async function Characters(){
-    const data = await fetchChars()
+    const data = await fetchAllChars()
 
     return (
         <>  
