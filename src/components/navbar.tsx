@@ -16,9 +16,9 @@ function NavBar(){
                 <GiBrain className="header_logo"/>
             </div>
             <ul className="md:flex md:items-center gap-10">
-                <Button addr="/####" name="Rick & Morty"/>
-                <Button addr="/" name="Calculadora"/>
-                <Button addr="/" name="Numeros Primos"/>
+                <Button addr="/chars" name="Rick & Morty"/>
+                <Button addr="/calc" name="Calculadora"/>
+                <Button addr="/numbers" name="Numeros Primos"/>
             </ul>
         </nav>
     )

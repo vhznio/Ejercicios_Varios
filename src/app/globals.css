@@ -3,22 +3,30 @@
 @tailwind utilities;
 
 @layer components {
-  .character {
-     @apply bg-green-200;
+  .cards_container {
+     @apply mt-10 p-5 h-screen grid grid-cols-2 md:grid-cols-3 gap-10;
+  }
+
+  .cards {
+    @apply shadow-lg shadow-green-900 hover:shadow-green-400 rounded-lg flex flex-col justify-center items-center;
+  }
+
+  .cards_content {
+    @apply text-white text-lg content-center text-center p-2;
   }
 
   .header {
-    @apply bg-gray-800 h-16 shadow flex fixed w-screen;
+    @apply bg-gray-800 h-16 shadow flex w-screen items-center justify-center;
   }
 
   .header_section_name {
-    @apply ml-20 shadow-md text-green-600 text-justify text-lg hover:border-b hover:text-green-300 hover:border-green-400 hover:bg-gray-800 border-b border-gray-600 rounded-md p-1;
+    @apply select-none shadow-md text-green-600 text-justify text-lg hover:border-b hover:text-green-300 hover:border-green-400 hover:bg-gray-800 border-b border-gray-600 rounded-md p-1;
   }
 
   .header_logo {
-    @apply relative flex items-center justify-center
-    h-12 w-12 mt-2 mb-2 mx-auto shadow-2xl
-    bg-gray-700 text-green-500 ml-10
+    @apply absolute left-2 top-0
+    h-12 w-12 mt-2 mb-2 shadow-2xl
+    bg-gray-700 text-green-500 
     hover:bg-green-600 rounded-3xl hover:rounded-xl
     transition-all duration-200 ease-linear cursor-pointer;
   }

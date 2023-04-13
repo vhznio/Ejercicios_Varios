@@ -8,9 +8,9 @@ const myLoader = ({ src, width, quality }:any) => {
     return `https://rickandmortyapi.com/api/character/avatar/${src}.jpeg`
 }
 
-async function Characters(){
+async function CharData(){
     const data = await fetchChars()
-
+    
     return (
         <>  
         <div className='justify-center text-center mt-5'>
@@ -20,8 +20,7 @@ async function Characters(){
             {data.map(char => {
             return(
                 <div className='cards' key={char.id}>   
-                    <h1 className='cards_content'>{char.name} </h1>              
-                    <Link className='cards_content' href={`/chars/${char.id}`}>      
+                    <h1 className='cards_content'>{char.name} </h1>                   
                         <Image className='rounded-md '
                             loader={myLoader}
                             src={char.id.toString()}
@@ -29,7 +28,6 @@ async function Characters(){
                             width={400}
                             height={400}
                          />
-                    </Link>
                 </div>
             )
             })}
@@ -38,4 +36,4 @@ async function Characters(){
     )
 }
 
-export default Characters
+export default CharData
