@@ -13,7 +13,9 @@ function NavBar(){
     return(
         <nav className="header">
             <div>
-                <GiBrain className="header_logo"/>
+                <Link href={'/'}>
+                    <GiBrain className="header_logo"/>
+                </Link>
             </div>
             <ul className="md:flex md:items-center gap-10">
                 <Button addr="/chars" name="Rick & Morty"/>

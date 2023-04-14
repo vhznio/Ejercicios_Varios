@@ -8,7 +8,7 @@
   }
 
   .cards {
-    @apply shadow-lg shadow-green-900 hover:shadow-green-400 rounded-lg flex flex-col justify-center items-center;
+    @apply select-none shadow-lg shadow-green-900 hover:shadow-green-400 rounded-lg flex flex-col justify-center items-center;
   }
 
   .cards_content {
@@ -40,15 +40,15 @@
   }
 
   .calc_display {
-    @apply border shadow-md  shadow-green-900 border-green-800 w-80 h-16 rounded-md flex items-center justify-end;
+    @apply border shadow-md p-5 shadow-green-900 border-green-800 w-80 h-16 rounded-md flex items-center justify-end;
   }
 
   .calc_display_text {
-    @apply text-green-500 text-3xl inline-block align-middle mr-2;
+    @apply text-green-500 text-3xl inline-block align-middle line-clamp-1;
   }
 
   .calc_button_number {
-    @apply w-16 h-16 bg-slate-400 rounded-md shadow-md shadow-gray-800 hover:shadow-gray-500 text-4xl;
+    @apply w-16 h-16 rounded-full shadow-md shadow-gray-500   hover:shadow-green-400 hover:text-white text-4xl text-indigo-500;
   }
 
   .calc_button_char {
