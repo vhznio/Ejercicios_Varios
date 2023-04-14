@@ -13,8 +13,8 @@ async function Characters(){
 
     return (
         <>  
-        <div className='justify-center text-center mt-5'>
-            <h1 className='text-green-500 text-5xl '>CHARACTERS</h1>
+        <div className='justify-center text-center mt-8'>
+            <h1 className='text-green-300 text-4xl '>CHARACTERS</h1>
         </div>
         <div className='cards_container'>
             {data.map(char => {
@@ -34,6 +34,12 @@ async function Characters(){
             )
             })}
         </div>
+        <footer
+            className="footer">
+            <div className="p-4 text-center text-neutral-700 dark:text-neutral-200">
+                © 2023 Copyright:
+            </div>
+        </footer>
         </>
     )
 }

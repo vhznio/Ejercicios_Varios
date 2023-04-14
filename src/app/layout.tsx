@@ -1,6 +1,8 @@
 import './globals.css'
 import NavBar from '@/components/navbar'
 import { Share_Tech_Mono } from 'next/font/google'
+import { Suspense } from 'react'
+import Loading from './loading'
 
 const tech = Share_Tech_Mono({
    weight: '400',
@@ -21,7 +23,9 @@ export default function RootLayout({
     <html lang="en" className={tech.className}>
       <body>
         <NavBar/>
-        {children}
+        <Suspense fallback={<Loading/>}>
+          {children}
+        </Suspense>
       </body>
     </html>
   )
