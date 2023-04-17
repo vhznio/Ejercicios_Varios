@@ -37,12 +37,11 @@ function Calc(){
         setDisplayText('0')
     }
     const calculate = (op:string) => {
-        setDisplayText(eval(op))
+        setDisplayText(eval(op).toString())
     }
 
-
     return (
-        <div className="h-auto w-screen mt-48 items-center justify-center flex flex-col">
+        <div className="h-auto w-screen mt-28 items-center justify-center flex flex-col">
             <div className='-mt-16'>
                 <div className="calc_display">
                     <span className="calc_display_text">

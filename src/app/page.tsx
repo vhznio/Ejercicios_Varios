@@ -1,12 +1,12 @@
-import Image from 'next/image'
 import './globals.css'
+import Carousel from '@/components/carousel'
 
 export default function Home() {
   return (
-    <section className='bg-red-100'>
-      <div>
-        
+    <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+      <div className='bg-green-500'>
+        <Carousel/>
       </div>
-    </section>
+    </div>
   )
 }

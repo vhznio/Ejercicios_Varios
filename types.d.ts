@@ -18,3 +18,11 @@ type Location = {
     name: string;
     url:  string;
 }
+
+
+type Info = {
+    count:  number;
+    pages:  number;
+    next:   string;
+    prev:   string;
+}

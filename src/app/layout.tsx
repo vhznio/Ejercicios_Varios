@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={tech.className}>
-      <body>
+      <body className='bg-black'>
         <NavBar/>
         <Suspense fallback={<Loading/>}>
           {children}

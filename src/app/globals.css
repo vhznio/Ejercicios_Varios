@@ -3,24 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-  .cards_container {
-     @apply h-auto mt-10 p-10 grid grid-cols-2 md:grid-cols-5 gap-10 ;
-  }
-
-  .cards {
-    @apply select-none shadow-lg shadow-green-900 hover:shadow-green-400 rounded-lg flex flex-col justify-center items-center;
-  }
-
-  .cards_content {
-    @apply text-white text-lg content-center text-center p-2;
-  }
-
   .header {
     @apply bg-gray-800 h-16 shadow flex w-screen items-center justify-center;
   }
 
   .header_section_name {
-    @apply select-none shadow-md text-green-600 text-justify text-lg hover:border-b hover:text-green-300 hover:border-green-400 hover:bg-gray-800 border-b border-gray-600 rounded-md p-1;
+    @apply select-none shadow-md text-green-600 
+    text-justify text-lg hover:border-b border-b 
+    hover:text-green-300 hover:border-green-400 
+    hover:bg-gray-800  border-gray-600 rounded-md p-1;
   }
 
   .header_logo {
@@ -35,12 +26,44 @@
     @apply  text-center text-lg m-10;
   }
 
+  .pagination_container {
+    @apply w-screen h-auto text-white flex items-center justify-center text-center gap-60 align-middle;
+  }
+
+  .pagination_button {
+    @apply border w-20 border-green-800 hover:border-green-500 rounded-full;
+  }
+
+  .search_container {
+    @apply text-white mt-10 w-screen h-auto flex justify-end;
+  }
+
+  .cards_container {
+    @apply h-auto p-10 grid grid-cols-2 md:grid-cols-5 gap-10 ;
+  }
+
+  .cards {
+    @apply select-none shadow-lg shadow-green-900 hover:shadow-green-400 
+    rounded-lg flex flex-col justify-center items-center;
+  }
+
+  .cards_content {
+    @apply text-white text-lg content-center text-center p-2;
+  }
+
+  .char_card {
+    @apply p-10 mt-10 h-auto flex shadow-lg shadow-green-400 justify-center items-center rounded-md;
+  }
+
   .calc_container {
-    @apply shadow-md mt-5 shadow-green-900 h-auto p-5 grid grid-cols-2 md:grid-cols-4 gap-5 rounded-lg;
+    @apply shadow-md mt-5 shadow-green-900 h-auto 
+    p-5 grid grid-cols-2 md:grid-cols-4 gap-5 rounded-lg;
   }
 
   .calc_display {
-    @apply border shadow-md p-5 shadow-green-900 border-green-800 w-80 h-16 rounded-md flex items-center justify-end;
+    @apply border shadow-md p-5 shadow-green-900 
+    border-green-800 w-80 h-16 
+    rounded-md flex items-center justify-end;
   }
 
   .calc_display_text {
@@ -48,14 +71,14 @@
   }
 
   .calc_button_number {
-    @apply w-16 h-16 rounded-full shadow-md shadow-gray-500   hover:shadow-green-400 hover:text-white text-4xl text-indigo-500;
+    @apply w-16 h-16 rounded-full shadow-md shadow-gray-500   
+  hover:shadow-green-400 hover:text-white text-4xl text-indigo-500;
   }
 
   .calc_button_char {
     @apply bg-black border border-green-500
     shadow-sm shadow-green-800 hover:shadow-md hover:shadow-green-300 text-green-500 text-4xl rounded-md;
   }
-
 }
 
 body {
@@ -74,3 +97,12 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid rgba(0,255,0,0.3);  /* creates padding around scroll thumb */
 }
 
+input {
+  @apply p-1 border-b border-green-900 focus:outline-none mr-5
+  text-green-400 bg-black focus:ring-1 focus:ring-green-800 rounded-md;
+}
+
+input::placeholder {
+  color: rgb(70,75,70);
+  text-align: center;
+}
