@@ -79,12 +79,7 @@ function Characters(){
                 <h1 className='text-green-300 text-4xl '>NOT FOUND</h1>
             </div>
         )} 
-        <footer
-            className="footer">
-            <div className="p-4 text-center text-neutral-700 dark:text-neutral-200">
-                © 2023 Copyright:
-            </div>
-        </footer>
+    
         </>
     )
 }

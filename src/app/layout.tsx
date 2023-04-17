@@ -1,5 +1,6 @@
 import './globals.css'
 import NavBar from '@/components/navbar'
+import Footer from '@/components/footer'
 import { Share_Tech_Mono } from 'next/font/google'
 import { Suspense } from 'react'
 import Loading from './loading'
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Suspense fallback={<Loading/>}>
           {children}
         </Suspense>
+        <Footer/>
       </body>
     </html>
   )

@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react'
 
-const PrimeNumbers = ({ getResults }:any) => {
+const Numbers = ({ getResults, title}:any) => {
     const [clientString, setClientString] = useState('');
 
     const handleSubmit = async (e:any) => {
@@ -14,7 +14,7 @@ const PrimeNumbers = ({ getResults }:any) => {
     return (
         <>
             <div className='header bg-black mt-8'>
-                <h1 className='text-green-300 text-4xl select-none'>PRIME NUMBERS</h1>
+                <h1 className='text-green-300 text-4xl select-none'>{title}</h1>
             </div>
             <div className='text-white mt-5 mb-5 w-screen h-auto flex justify-center'>
                 <h2>Enter numbers separated by</h2>
@@ -37,4 +37,4 @@ const PrimeNumbers = ({ getResults }:any) => {
     )
 }
 
-export default PrimeNumbers
+export default Numbers

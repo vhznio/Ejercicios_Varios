@@ -32,7 +32,7 @@ function Numbers(){
     
     return (
         <>         
-            <PrimeNumbers getResults={calculate}/>
+            <PrimeNumbers title="PRIME NUMBERS" getResults={calculate}/>
             <div className='h-auto w-screen flex items-center justify-center'>
                 <button onClick={clear} className='text-gray-500 text-sm border w-16 mt-2 border-green-800 
                 hover:border-green-500 rounded-xl mr-4' type='submit'>

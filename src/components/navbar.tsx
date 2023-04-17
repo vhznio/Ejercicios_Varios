@@ -20,7 +20,8 @@ function NavBar(){
             <ul className="md:flex md:items-center gap-10">
                 <Button addr="/chars" name="Rick & Morty"/>
                 <Button addr="/calc" name="Calculator"/>
-                <Button addr="/numbers" name="Prime Numbers"/>
+                <Button addr="/prime_numbers" name="Prime Numbers"/>
+                <Button addr="/odd_even_numbers" name="Odd & Even Numbers"/>
             </ul>
         </nav>
     )

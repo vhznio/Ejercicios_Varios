@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import {useState, useRef, useEffect} from 'react'
 import { MutableRefObject } from "react";
+import { register } from 'swiper/element/bundle';
+
+register();
 
 const img_paths:string[] = [
     "/01.png",
@@ -13,13 +16,13 @@ const img_paths:string[] = [
 const Carousel = () => {
 
     return (
-        <>
-            <Image
-                src={img_paths[1]}
-                alt="x"
-                width={500}
-                height={500}
-            />
+        <>  
+        <swiper-container slides-per-view="3" speed="500" loop="true" css-mode="true">
+        <swiper-slide>{img_paths[0]}</swiper-slide>
+        <swiper-slide>{img_paths[1]}</swiper-slide>
+        <swiper-slide>{img_paths[2]}</swiper-slide>
+        ...
+        </swiper-container>
         </>
     )
 }

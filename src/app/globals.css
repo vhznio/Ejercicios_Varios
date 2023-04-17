@@ -79,6 +79,11 @@
     @apply bg-black border border-green-500
     shadow-sm shadow-green-800 hover:shadow-md hover:shadow-green-300 text-green-500 text-4xl rounded-md;
   }
+
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
 }
 
 body {
