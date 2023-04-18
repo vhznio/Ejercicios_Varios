@@ -13,7 +13,7 @@ const Numbers = ({ getResults, title}:any) => {
 
     return (
         <>
-            <div className='header bg-black mt-8'>
+            <div className='flex justify-center bg-black mt-8'>
                 <h1 className='text-green-300 text-4xl select-none'>{title}</h1>
             </div>
             <div className='text-white mt-5 mb-5 w-screen h-auto flex justify-center'>

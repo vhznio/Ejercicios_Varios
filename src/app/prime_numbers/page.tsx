@@ -2,7 +2,7 @@
 
 
 import { useState } from 'react'
-import PrimeNumbers from "@/components/primeNumbers"
+import PrimeNumbers from "@/components/numbers"
 
 function Numbers(){
     const [numberArray, setNumberArray] = useState<number[]>([]);

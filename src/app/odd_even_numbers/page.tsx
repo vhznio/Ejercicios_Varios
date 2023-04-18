@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react'
-import OddEvenNumbers from "@/components/primeNumbers"
+import OddEvenNumbers from "@/components/numbers"
 
 function Numbers(){
     const [evenArray, setEvenArray] = useState<number[]>([]);

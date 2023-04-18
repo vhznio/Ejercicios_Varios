@@ -46,7 +46,7 @@ function Characters(){
 
     return (
         <>  
-        <div className='header bg-black mt-8'>
+        <div className='flex items-center justify-center bg-black mt-8'>
             <h1 className='text-green-300 text-4xl '>CHARACTERS</h1>
         </div>
         <SearchEngine getResults={getSearchResults}/>
