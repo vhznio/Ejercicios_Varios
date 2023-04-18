@@ -16,14 +16,7 @@ const img_paths:string[] = [
 const Carousel = () => {
 
     return (
-        <>  
-        <swiper-container slides-per-view="3" speed="500" loop="true" css-mode="true">
-        <swiper-slide>{img_paths[0]}</swiper-slide>
-        <swiper-slide>{img_paths[1]}</swiper-slide>
-        <swiper-slide>{img_paths[2]}</swiper-slide>
-        ...
-        </swiper-container>
-        </>
+        <div></div>
     )
 }
 
