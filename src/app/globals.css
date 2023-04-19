@@ -4,7 +4,7 @@
 
 @layer components {
   .header {
-    @apply flex items-center justify-between flex-wrap bg-gray-800 p-4 ;
+    @apply flex items-center justify-between flex-wrap bg-gray-800 p-4;
   }
 
   .header_links_container {
@@ -12,30 +12,35 @@
   }
 
   .header_links {
-    @apply lg:flex-grow lg:flex justify-center text-justify min-[1024px]:space-x-10 flex flex-col lg:flex-row items-center;
+    @apply lg:flex-grow lg:flex justify-center text-justify 
+    min-[1024px]:space-x-10 flex flex-col lg:flex-row items-center;
   }
 
   .header_links_li { 
     @apply w-auto block justify-center text-lg text-green-500 
-    max-[1024px]:border-b border-gray-700 max-[1024px]:p-8 max-[1024px]:text-xl max-[1024px]:flex
-    max-[1024px]:w-full hover:text-green-300 shadow-md hover:border-b hover:border-gray-500 rounded-md;
+    max-[1024px]:border-b border-gray-700 max-[1024px]:p-8 
+    max-[1024px]:text-xl max-[1024px]:flex
+    max-[1024px]:w-full hover:text-green-300 shadow-md hover:border-b 
+    hover:border-gray-500 rounded-md max-[1024px]:mt-16;
   }
 
   .header_logo {
-    @apply flex items-center flex-shrink-0 text-green-500 mr-6 text-3xl;
+    @apply flex items-center flex-shrink-0 text-green-500 
+    mr-6 text-3xl hover:text-green-300 max-[1024px]:hover:ml-0.5;
   }
 
   .header_logo_mobile {
-    @apply flex items-center  text-green-500 text-3xl hover:text-green-300
-    lg:hidden;
+    @apply flex items-center  text-green-500 text-3xl  hover:text-green-300
+    lg:hidden hover:mr-0.5;
   }
   
   .footer {
-    @apply text-center text-lg m-10;
+    @apply text-center text-lg m-10 select-none;
   }
 
   .pagination_container {
-    @apply w-screen h-auto text-white flex items-center justify-center text-center gap-60 align-middle;
+    @apply w-screen h-auto text-white flex items-center 
+    justify-center text-center gap-60 align-middle;
   }
 
   .pagination_button {
@@ -43,11 +48,12 @@
   }
 
   .search_container {
-    @apply text-white mt-10 w-screen h-auto flex justify-end;
+    @apply text-white mt-10 mb-10 w-screen h-auto flex 
+    max-[1024px]:justify-center justify-end align-middle items-center;
   }
 
   .cards_container {
-    @apply h-auto p-10 grid grid-cols-2 md:grid-cols-5 gap-10 ;
+    @apply h-auto p-10 grid grid-cols-2 md:grid-cols-5 gap-10;
   }
 
   .cards {
@@ -60,29 +66,26 @@
   }
 
   .char_card {
-    @apply p-10 mt-10 h-auto flex shadow-lg shadow-green-400 justify-center items-center rounded-md;
+    @apply p-10 mt-10 h-auto flex shadow-lg shadow-green-400 
+    justify-center items-center rounded-md;
   }
 
   .calc_container {
     @apply shadow-md mt-5 shadow-green-900 h-auto 
     p-5 grid grid-cols-4 gap-5 rounded-lg;
   }
-
   .calc_display {
     @apply border shadow-md p-5 shadow-green-900 
     border-green-800 w-80 h-16 
     rounded-md flex items-center justify-end;
   }
-
   .calc_display_text {
     @apply text-green-500 text-3xl inline-block align-middle line-clamp-1;
   }
-
   .calc_button_number {
     @apply w-16 h-16 rounded-full shadow-md shadow-gray-500   
   hover:shadow-green-400 hover:text-white lg:text-4xl text-2xl text-indigo-500;
   }
-
   .calc_button_char {
     @apply bg-black border border-green-500
     shadow-sm shadow-green-800 hover:shadow-md lg:text-4xl text-2xl

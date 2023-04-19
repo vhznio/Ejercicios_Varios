@@ -47,17 +47,17 @@ function Numbers(){
                     Clear
                 </button>
             </div>
-            <div className='h-auto p-40 w-auto grid grid-cols-2 md:grid-cols-2 gap-10 mt-10'>
+            <div className='w-full grid grid-flow-col justify-around mt-10'>
                 <div>
                     <div className='text-white justify-center flex mb-5'>
                         <h1>Even Numbers</h1>
                     </div>
-                    < div className='grid gap-5 md:grid-cols-4 grid-cols-2'>
+                    < div className='grid gap-5 grid-cols-2 md:grid-cols-4 '>
                         {evenArray.map(number => {
                             return (
-                                <div key={number} className='h-20 w-20 select-none shadow-lg shadow-green-900 hover:shadow-green-400 
-                                rounded-lg flex flex-col justify-center items-center'>
-                                    <h1 className='text-white text-5xl content-center text-center'>
+                                <div key={number} className='shadow-md shadow-orange-500 rounded-full 
+                                w-14 h-14  flex justify-center items-center'>
+                                    <h1 className='text-white text-3xl  content-center text-center'>
                                         {number.toString()}
                                     </h1>
                                 </div>
@@ -70,12 +70,12 @@ function Numbers(){
                     <div className='text-white justify-center flex mb-5'>
                         <h1>Odd Numbers</h1>
                     </div>
-                    < div className='grid gap-5 md:grid-cols-4 grid-cols-2'>
+                    < div className='grid gap-5 grid-cols-2 md:grid-cols-4  '>
                         {oddArray.map(number => {
                             return (
-                                <div key={number} className='h-20 w-20 select-none shadow-lg shadow-red-900 hover:shadow-red-400 
-                                rounded-lg flex flex-col justify-center items-center'>
-                                    <h1 className='text-white text-5xl content-center text-center'>
+                                <div key={number} className='shadow-md shadow-indigo-500 rounded-full 
+                                w-14 h-14 flex justify-center items-center'>
+                                    <h1 className='text-white text-3xl content-center text-center'>
                                         {number.toString()}
                                     </h1>
                                 </div>
@@ -83,9 +83,7 @@ function Numbers(){
                         })}
                     </div >
                 </div>
-                
-            </div>
-            
+            </div>     
         </>
     )
 }

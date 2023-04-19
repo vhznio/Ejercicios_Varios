@@ -39,12 +39,11 @@ function Numbers(){
                     Clear
                 </button>
             </div>
-            < div className='h-auto p-20 w-auto grid grid-cols-2 md:grid-cols-8 gap-10'>
+            < div className='h-auto p-20 grid grid-cols-4 lg:grid-cols-8 gap-10'>
                 {numberArray.map(number => {
                     return (
-                        <div key={number} className='h-20 w-20 select-none shadow-lg shadow-green-900 hover:shadow-green-400 
-                        rounded-lg flex flex-col justify-center items-center'>
-                            <h1 className='text-white text-5xl content-center text-center'>
+                        <div key={number} className='shadow-md shadow-green-500 rounded-full w-14 h-14 flex justify-center items-center'>
+                            <h1 className='text-white text-3xl content-center text-center'>
                                 {number.toString()}
                             </h1>
                         </div>
