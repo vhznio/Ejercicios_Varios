@@ -4,20 +4,21 @@
 
 @layer components {
   .header {
-    @apply flex items-center justify-between flex-wrap bg-gray-800 p-6;
+    @apply flex items-center justify-between flex-wrap bg-gray-800 p-4 ;
   }
 
   .header_links_container {
     @apply w-full block flex-grow lg:flex lg:items-center lg:w-auto;
   }
+
   .header_links {
-    @apply lg:flex-grow lg:flex justify-center text-justify flex flex-col lg:flex-row items-center;
+    @apply lg:flex-grow lg:flex justify-center text-justify min-[1024px]:space-x-10 flex flex-col lg:flex-row items-center;
   }
 
   .header_links_li { 
-    @apply block mt-8 lg:justify-center lg:mt-0 mr-4 hover:border-green-400 lg:text-lg
-    select-none shadow-md hover:text-green-300 hover:border-b border-b border-gray-600 rounded-full
-    text-green-600 text-justify text-sm;
+    @apply w-auto block justify-center text-lg text-green-500 
+    max-[1024px]:border-b border-gray-700 max-[1024px]:p-8 max-[1024px]:text-xl max-[1024px]:flex
+    max-[1024px]:w-full hover:text-green-300 shadow-md hover:border-b hover:border-gray-500 rounded-md;
   }
 
   .header_logo {
@@ -85,12 +86,7 @@
   .calc_button_char {
     @apply bg-black border border-green-500
     shadow-sm shadow-green-800 hover:shadow-md lg:text-4xl text-2xl
-     hover:shadow-green-300 text-green-500 text-4xl rounded-md;
-  }
-
-  .swiper {
-    width: 600px;
-    height: 300px;
+     hover:shadow-green-300 text-green-500 rounded-md;
   }
 }
 

@@ -16,7 +16,13 @@ const img_paths:string[] = [
 const Carousel = () => {
 
     return (
-        <div></div>
+        <Image className='rounded-md '
+                                        
+                                        src={img_paths[0]}
+                                        alt={"xd"}
+                                        width={500}
+                                        height={500}
+                                    />
     )
 }
 

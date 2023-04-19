@@ -5,22 +5,16 @@ import { GiBrain } from "react-icons/gi";
 import { CiMenuFries } from "react-icons/ci"
 import { useState } from "react"
 
-function Button( {name, addr} : any ) {
+function Button( {name, addr, collapse} : any ) {
     return (
         <li className="header_links_li">
-            <Link href={addr}>{name}</Link>
+            <Link onClick={collapse} href={addr}>{name}</Link>
         </li>
     )
 }
 
 function NavBar(){
-    const colapsed = "bg-red-500 header_links_container"
-    const [menuClass, setMenuClass] = useState<string>(colapsed);
-
-    const colapse = () => { 
-        menuClass === colapsed ? setMenuClass('header_links_container') :setMenuClass(colapsed)
-        return menuClass
-    }
+    const [navbar, setNavbar] = useState(false);
 
     return(
         <nav className="header">
@@ -31,15 +25,15 @@ function NavBar(){
             </div>
             <div className="header_logo_mobile">
                 <Link href={'/'}>
-                    <CiMenuFries onClick={colapse} className="header_logo_mobile"/>
+                    <CiMenuFries onClick={() => setNavbar(!navbar)} className="header_logo_mobile"/>
                 </Link>
             </div>
-            <div className={menuClass}>
+            <div className={`header_links_container ${navbar ? 'p-12 md:p-0 block' : 'max-[1024px]:hidden'}`}>
                     <ul className="header_links">
-                        <Button addr="/chars" name="Rick and Morty"/>
-                        <Button addr="/calc" name="Calculator"/>
-                        <Button addr="/prime_numbers" name="Prime Numbers"/>
-                        <Button addr="/odd_even_numbers" name="Odd & Even Numbers"/>
+                        <Button collapse={() => {setNavbar(!navbar)}} addr="/chars" name="Rick and Morty"/>
+                        <Button collapse={() => {setNavbar(!navbar)}} addr="/calc" name="Calculator"/>
+                        <Button collapse={() => {setNavbar(!navbar)}} addr="/prime_numbers" name="Prime Numbers"/>
+                        <Button collapse={() => {setNavbar(!navbar)}} addr="/odd_even_numbers" name="Odd & Even Numbers"/>
                     </ul>
             </div>
         </nav> 
