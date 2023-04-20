@@ -29,8 +29,6 @@ function Numbers(){
 
         setEvenArray(final_even_array)
         setOddArray(final_odd_array)
-
-        console.log(oddArray)
     }
 
     const clear = () => { 

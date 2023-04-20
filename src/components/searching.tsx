@@ -13,16 +13,15 @@ const SearchEngine = ({ getResults }:any) => {
 
     return (
         <div className="search_container">
-            <form className='search-form' onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <input
-                    className='search-input'
                     type='text'
                     name='query'
                     placeholder='Search chars...'
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                 />
-                <button className='pagination_button mr-10' type='submit'>
+                <button className='min-[1024px]:mr-20 border border-green-500 rounded-full w-20 text-sm' type='submit'>
                     Search
                 </button>
             </form>

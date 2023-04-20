@@ -39,7 +39,7 @@ function Numbers(){
                     Clear
                 </button>
             </div>
-            < div className='h-auto p-20 grid grid-cols-4 lg:grid-cols-8 gap-10'>
+            < div className='prime_numbers_container'>
                 {numberArray.map(number => {
                     return (
                         <div key={number} className='shadow-md shadow-green-500 rounded-full w-14 h-14 flex justify-center items-center'>

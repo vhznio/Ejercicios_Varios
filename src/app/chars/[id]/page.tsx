@@ -17,10 +17,10 @@ async function CharData({ params: {id} }: Params){
     const data = await fetchChar(id)
     return (
         <>
-        <div className='header bg-black mt-8'>
-            <h1 className='text-green-300 text-4xl'>{data.name.toUpperCase()}</h1>
+        <div className='w-full flex justify-center bg-black mt-8'>
+            <h1 className='text-green-300 text-2xl'>{data.name.toUpperCase()}</h1>
         </div>
-        <div className='flex h-auto justify-center items-center select-none' key={data.id}>
+        <div className='char_card_container' key={data.id}>
             <div className='char_card'>
                 <div>
                     <Image className='rounded-md '

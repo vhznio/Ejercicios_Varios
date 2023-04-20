@@ -19,9 +19,9 @@
   .header_links_li { 
     @apply w-auto block justify-center text-lg text-green-500 
     max-[1024px]:border-b border-gray-700 max-[1024px]:p-8 
-    max-[1024px]:text-xl max-[1024px]:flex
+    max-[1024px]:text-sm max-[1024px]:flex
     max-[1024px]:w-full hover:text-green-300 shadow-md hover:border-b 
-    hover:border-gray-500 rounded-md max-[1024px]:mt-16;
+    hover:border-gray-500 rounded-md max-[1024px]:mt-2;
   }
 
   .header_logo {
@@ -65,9 +65,19 @@
     @apply text-white text-lg content-center text-center p-2;
   }
 
+  .char_card_container {
+    @apply flex h-auto justify-center 
+    items-center select-none min-[200px]:p-5;
+  }
+
   .char_card {
-    @apply p-10 mt-10 h-auto flex shadow-lg shadow-green-400 
+    @apply p-6 mt-10 h-auto flex shadow-lg shadow-green-400 
     justify-center items-center rounded-md;
+  }
+
+  .calc_container_container {
+    @apply h-auto w-screen mt-28 items-center justify-center flex flex-col 
+    max-[1024px]:p-5; 
   }
 
   .calc_container {
@@ -83,13 +93,21 @@
     @apply text-green-500 text-3xl inline-block align-middle line-clamp-1;
   }
   .calc_button_number {
-    @apply w-16 h-16 rounded-full shadow-md shadow-gray-500   
+    @apply w-16 h-16 max-[1024px]:w-14 max-[1024px]:h-14 rounded-full shadow-md shadow-gray-500   
   hover:shadow-green-400 hover:text-white lg:text-4xl text-2xl text-indigo-500;
   }
   .calc_button_char {
-    @apply bg-black border border-green-500
+    @apply bg-black border border-green-500 max-[1024px]:w-14 max-[1024px]:h-14
     shadow-sm shadow-green-800 hover:shadow-md lg:text-4xl text-2xl
      hover:shadow-green-300 text-green-500 rounded-md;
+  }
+
+  .number_instructions {
+    @apply  mt-5 text-white justify-center items-center flex max-[1024px]:flex-col min-[1024px]:gap-8;
+  }
+
+  .prime_numbers_container {
+    @apply h-auto p-20 grid grid-cols-4 lg:grid-cols-8 gap-10 max-[400px]:grid-cols-2;
   }
 }
 
@@ -110,7 +128,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 input {
-  @apply p-1 border-b border-green-900 focus:outline-none mr-5
+  @apply p-1 border-b border-green-900 focus:outline-none mr-5 mt-10 min-[1024px]:mr-10
   text-green-400 bg-black focus:ring-1 focus:ring-green-800 rounded-md;
 }
 

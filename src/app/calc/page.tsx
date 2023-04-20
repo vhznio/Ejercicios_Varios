@@ -41,7 +41,7 @@ function Calc(){
     }
 
     return (
-        <div className="h-auto w-screen mt-28 items-center justify-center flex flex-col">
+        <div className="calc_container_container">
             <div className='-mt-16'>
                 <div className="calc_display">
                     <span className="calc_display_text">
